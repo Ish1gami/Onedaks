@@ -1,6 +1,6 @@
 import javax.swing.JOptionPane;
 
-public class Q1 {
+public class OneDaks {
     public static void main(String[] args) {
         int number = -1;
 
