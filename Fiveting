@@ -1,15 +1,24 @@
-public class Fiveting
-{
-   public static void main(String[] args) {
-       
-       int [] arr = {2, 1, 9, 6, 7};
-       int num = 2;
-       
-       for (int i = 0; i < arr.length; i++) {
-           if(arr[i] == num) {
-               System.out.println("Found "+ num + " at "+ i + " index ");
-               break;
-           }         
-       }
-   }
+import javax.swing.JOptionPane;
+
+public class FiveTing {
+    public static void main(String[] args) {
+        int[] arr = {3, 8, 12, 5, 7, 20, 9};
+        
+        String input = JOptionPane.showInputDialog("Enter a number to search:");
+        int target = Integer.parseInt(input);
+
+        boolean found = false;
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == target) {
+                found = true;
+                break;
+            }
+        }
+
+        if (found)
+            JOptionPane.showMessageDialog(null, "Value found! Loop stopped early.");
+        else
+            JOptionPane.showMessageDialog(null, "Value NOT found.");
+    }
 }
